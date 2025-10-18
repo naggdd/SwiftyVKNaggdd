@@ -42,6 +42,7 @@ public indirect enum VKError: Error {
     case captchaWasDismissed
     case sharingWasDismissed
     
+    case vkAppTokenIsNil
     case weakObjectWasDeallocated
     
     func toApi() -> ApiError? {
