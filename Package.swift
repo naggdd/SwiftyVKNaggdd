@@ -5,8 +5,7 @@ let package = Package(
     name: "SwiftyVK",
     defaultLocalization: "en",
     platforms: [
-        .iOS(.v12),
-        .macOS(.v10_13)
+        .iOS(.v12)
     ],
     products: [
         .library(
@@ -30,8 +29,7 @@ let package = Package(
                 "UI"
             ],
             resources: [
-                .copy("Resources/Bundles/SwiftyVK_resources_iOS.bundle"),
-                .copy("Resources/Bundles/SwiftyVK_resources_macOS.bundle")
+                .copy("Resources/Bundles/SwiftyVK_resources_iOS.bundle")
             ],
             linkerSettings: [
                 .linkedFramework("SystemConfiguration"),
